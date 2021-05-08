@@ -1,44 +1,44 @@
 #include <stdio.h>
 main ()
-	{int n,a[8];
-	int i;
+	{int	n,mssv[8];
+	int	i;
 	scanf("%d",&n);
 	for (i=7;i>=0;i--)
-	{a[i]=n/pow(10,i);
-	n=n-a[i]*pow(10,i);}
+	{mssv[i] = n/pow(10,i);
+	n = n-mssv[i]*pow(10,i);}
 	for (i=7;i>=0;i--)
-	{	switch (a[i]) {
-		case 0:
+	{switch (mssv[i]) {
+	case 0:
 		{printf("khong");
-			break;}
-		case 1:
+		break;}
+	case 1:
 		{printf("mot");
-			break;}
-		case 2:
+		break;}
+	case 2:
 		{printf("hai");
-			break;}
-		case 3:
+		break;}
+	case 3:
 		{printf("ba");
-			break;}
-		case 4:
+		break;}
+	case 4:
 		{printf("bon");
-			break;}
-		case 5:
+		break;}
+	case 5:
 		{printf("nam");
-			break;}
-		case 6:
+		break;}
+	case 6:
 		{printf("sau");
-			break;}
-		case 7:
+		break;}
+	case 7:
 		{printf("bay");
-			break;}
-		case 8:
+		break;}
+	case 8:
 		{printf("tam");
-			break;}
-		case 9:
+		break;}
+	case 9:
 		{printf("chin");
-			break;}
-		}
+		break;}
+	}
 		printf(" ");
 	}
 	}
